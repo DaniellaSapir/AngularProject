@@ -1,0 +1,26 @@
+<!doctype html5>
+<html>
+<head><!--some index file-->
+<script src="node_modules/reflect-metadata/Reflect.js"></script>
+<script src="node_modules/systejs/dist/system.src.js"></script>
+<script src="systemis.config.js"></script>
+<link href="resets" rel="stylesheet">
+<style>
+    /* the BS files and other custom CSS files are added in angular.json file->styles */
+body {
+    margin:0px;
+    padding:0px;
+    background-color: green;
+}
+</style>
+<script>
+    System.import('app').catch(function(err){ 
+        console.error(err);
+    })
+</script>
+</head>
+<body>
+    <!-- this file can be deleted as the index from src is displayed -->
+    <app-root>Loading...</app-root>
+</body>
+</html>
