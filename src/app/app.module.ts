@@ -6,12 +6,22 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ServerComponent } from './server/server.component';
 import { ServersComponent } from './servers/servers.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { RegFormComponent } from './reg-form/reg-form.component';
+import { Page2Component } from './page2/page2.component';
+import { RegistrStep1Component } from './registr-step1/registr-step1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
-    ServersComponent
+    ServersComponent,
+    NavbarComponent,
+    RegistrationComponent,
+    RegFormComponent,
+    Page2Component,
+    RegistrStep1Component
   ],
   imports: [
     BrowserModule, FormsModule, HttpModule

@@ -1,32 +1,21 @@
-<!--The content below is the HTML code that's being rendered and 
-  what the user actually sees.-->
-<app-navbar></app-navbar>
+  <!-- page 2 - registration two steps (angular template design and implement.) -->
+  <app-navbar></app-navbar>
   <h2 style="text-align:center"> 
-    <!-- reflect the inserted name above - actual ngModel binding-->
-    Welcome to {{ name }}
-    <!-- AUTOMATIC COMPONENT GENERATION USING CLI -->
-    <!-- cli : cli ng generate(generates elements) component servers  -->
-    <!-- OR in short : ng g c servers , it also adds into app.module.ts-->
+    Welcome to our Registration page:
   </h2>
   <div class="container">
     <div class="row">
-      <div class="col-sm-5 registration">
-          <input class="type" type="text" placeholder="Start typing here:" [(ngModel)]="name">   
-          <app-registration></app-registration>
+      <div class="col-sm-6 registration">
+          <app-registr-step1></app-registr-step1>
       </div>
-      <div class="col-sm-5 about">
+      <div class="col-sm-6 about">
         <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
           </p>
-      </div>
-      <div class="col-sm-2 prods">
-          <app-server></app-server>
       </div>
     </div>
   </div>
   <!-- ul>li*3>span.hello$     - Emmet abr. for ul -->
-<div>
-  <app-page2></app-page2>
-</div>
+  
 <!-- learn OO in JS, nodejs,  -->
 <!-- passport - auth module  -->
 <!-- prototypes, calls -->
